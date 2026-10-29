@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>工单撤回｜PDA 交互 Demo</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="demo-layout">
+      <section class="intro" aria-label="Demo 说明">
+        <p class="eyebrow">异常工单 · 交互 Demo</p>
+        <h1>接单前撤回工单</h1>
+        <p>当前模拟 A 店店员乙。第一张工单由同店店员甲提报；从「处理中」列表打开它，点击详情右上角【撤回工单】。</p>
+        <div class="demo-tools">
+          <button type="button" id="reset-demo">重置演示</button>
+          <button type="button" id="simulate-accept">模拟责任人此刻接单</button>
+          <button type="button" id="open-old-link" disabled>打开撤回前的旧链接</button>
+        </div>
+        <p class="hint">画面外按钮用于重置、模拟接单和查看旧链接，不属于 PDA 页面。Demo 使用本地合成数据，不连接业务系统。</p>
+        <p class="source">视觉依据：现有 PDA 工单协作原型；状态和权限依据本需求 PRD。</p>
+      </section>
+
+      <section class="phone" aria-label="PDA 工单协作演示页面">
+        <div id="app" class="phone-app"></div>
+      </section>
+    </main>
+    <script src="./app.js" defer></script>
+  </body>
+</html>
